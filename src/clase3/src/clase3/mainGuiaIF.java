@@ -54,12 +54,12 @@ package clase3;
 	  		   int edad;
 	  		   Scanner L=new Scanner(System.in);
 	  		    
-	  		   System.out.println("engrese su edad:");
+	  		   System.out.println("ingrese su edad:");
 	  		   
 	  		   edad=Integer.parseInt(L.nextLine());
 	  		   
 	  		  
-	  		   if((edad>=13)&&(edad<=17)){
+	  		   if(edad>=13&&edad<=17){
 	  		  System.out.println("la persona es adolecente");
 	  	      }
 	    	}
@@ -79,8 +79,23 @@ package clase3;
 		
 		public static void Ej6(){
 			
+			int edad;
+			Scanner Y=new Scanner (System.in);
+			System.out.println("ingrese una edad");
+			edad=Integer.parseInt(Y.nextLine());
 			
-			
+			if(edad<=18){
+				
+				System.out.println("la persona es mayor de edad");
+			   }
+			if(edad>13&&edad<17){
+		        System.out.println("la persona es adolecente");
+			   }
+			if(edad>13){
+				   System.out.println("la persona es menor");
+
+               }
+			   }
 		}
 	
 		
@@ -91,8 +106,8 @@ package clase3;
 		
 		
 	
-		
-	}
+	
+	
 	
 
 
