@@ -14,7 +14,7 @@ package clase3;
 			
 			
 			if(edad==15){
-				System.out.println("ni�a bonita");
+				System.out.println("niña bonita");
 			}
 		}
 	    
@@ -84,18 +84,50 @@ package clase3;
 			System.out.println("ingrese una edad");
 			edad=Integer.parseInt(Y.nextLine());
 			
-			if(edad<=18){
+			if(edad>=18){
 				
 				System.out.println("la persona es mayor de edad");
 			   }
-			if(edad>13&&edad<17){
+			else if(edad>13&&edad<17){
 		        System.out.println("la persona es adolecente");
 			   }
-			if(edad>13){
+			else{
 				   System.out.println("la persona es menor");
 
-               }
-			   }
+	       }
+	    }
+		
+		public static void Ej7(){
+			
+		
+			int edad;
+			
+			String casado;
+		
+
+			Scanner Z=new Scanner(System.in);
+			System.out.println("ingrese una edad");
+			edad=Integer.parseInt(Z.nextLine());
+			
+			System.out.println("ingrese estado civil");
+			casado=Z.nextLine();
+			
+		
+			
+			if ((edad<18&&casado!=)){
+			System.out.println("Es muy pequeño para NO ser soltero.");
+			
+	     	}else {
+			//no me salio
+		}
+		
+		
+		
+		
+		
+		
+		
+		}
 		}
 	
 		
