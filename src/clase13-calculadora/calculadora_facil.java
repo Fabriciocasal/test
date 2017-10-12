@@ -111,8 +111,35 @@ public class calculadora_facil extends javax.swing.JFrame {
         
         
         
-    }//GEN-LAST:event_sumaActionPerformed
+    }
+    
+    private void restaActionPerformed(java.awt.event.ActionEvent evt) {                                      
+        double num1= Double.parseDouble(this.numero1.getText());//el this. no influye
+        double num2= Double.parseDouble(numero2.getText());
+        
+        double result = num1-num2;
+        
+        Resultado.setText(String.valueOf(result));
+    }                                     
 
+    private void multiActionPerformed(java.awt.event.ActionEvent evt) {                                      
+        double num1= Double.parseDouble(this.numero1.getText());//el this. no influye
+        double num2= Double.parseDouble(numero2.getText());
+        
+        double result = num1*num2;
+        
+        Resultado.setText(String.valueOf(result));
+    }                                     
+
+    private void divisorActionPerformed(java.awt.event.ActionEvent evt) {                                        
+        double num1= Double.parseDouble(this.numero1.getText());//el this. no influye
+        double num2= Double.parseDouble(numero2.getText());
+        
+        double result = num1/num2;
+        
+        Resultado.setText(String.valueOf(result));
+        }//GEN-LAST:event_sumaActionPerformed
+    
     /**
      * @param args the command line arguments
      */
